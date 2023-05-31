@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guest Onboarding</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type="file"] {
+      cursor: pointer;
+    }
+    
+    .form-group.inline {
+      display: flex;
+      align-items: center;
+    }
+    
+    .form-group.inline label {
+      margin-right: 10px;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Guest Onboarding Form</h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="bio">Link to Your Bio:</label>
+        <input type="text" id="bio" name="bio" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="career">Career/Profession:</label>
+        <input type="text" id="career" name="career" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="headshot">Headshot Photograph:</label>
+        <input type="file" id="headshot" name="headshot" accept="image/*" required>
+      </div>
+      
+      <div class="form-group inline">
+        <label for="promote">Are you willing to promote/sponsor this podcast?</label>
+        <select id="promote" name="promote" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="recent-podcast">Link to Your Most Recent Podcast:</label>
+        <input type="text" id="recent-podcast" name="recent-podcast" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="recent-achievement">Recent Achievement:</label>
+        <input type="text" id="recent-achievement" name="recent-achievement" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="opportunities">Opportunities Offered to Podcast/Audience:</label>
+        <textarea id="opportunities" name="opportunities" rows="4" required></textarea>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
